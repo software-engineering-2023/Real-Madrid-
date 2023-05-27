@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Close Bank Account</title>
+    <style>
+        body {
+            background-color: #f8f9fc;
+            color: #444444;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 100px;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #353ddc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Close Bank Account</h1>
+    <p>Are you sure you want to close your bank account?</p>
+    
+    <button onclick="confirmCloseAccount()">Close Account</button>
+    
+    <div class="text-center">
+        <a class="small" href="index.html">Exit</a>
+    </div>
+    <script>
+        function confirmCloseAccount() {
+            
+            alert("Your bank account has been closed.");
+            
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
